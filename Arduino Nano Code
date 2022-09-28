@@ -1,0 +1,59 @@
+
+#include <LiquidCrystal.h>
+int baselineTemp = 0;
+int tempsensor = 0;
+int value = 0;
+int selectemp = 0;
+
+const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+
+void setup() {
+  analogWrite(6, 20);
+  lcd.begin(16, 2);
+  lcd.print("current|selected");
+  lcd.setCursor(0, 1);
+  lcd.print("       |        ");
+  pinMode(13, OUTPUT);
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+  pinMode(A1, INPUT);
+}
+
+void loop() {
+  value = analogRead(A1);
+  selectemp = value*(100.0 / 1023.0);
+    baselineTemp = 40;
+  
+  tempsensor = map(((analogRead(A0) - 20) * 3.04), 0, 1023, -40, 125);
+  Serial.print(tempsensor);
+  Serial.print(" C, ");
+  Serial.println(selectemp);
+  delay(100);
+  
+  if (tempsensor <= selectemp){
+    digitalWrite(13, HIGH);}
+  if (tempsensor > selectemp){
+    digitalWrite(13, LOW);}
+  if (selectemp == 0){
+    digitalWrite(13, LOW);
+  }
+
+  
+  lcd.setCursor(0, 1);
+  lcd.print(tempsensor);
+  lcd.setCursor(9, 1);
+  lcd.print(selectemp);
+  lcd.setCursor(4,1);
+  lcd.print('C');
+  lcd.setCursor(13, 1);
+  lcd.print('C');
+  delay(1000);
+  lcd.setCursor(0,1);
+  lcd.print("   ");
+  lcd.setCursor(9,1);
+  lcd.print("   ");
+ 
+  
+  
+}
