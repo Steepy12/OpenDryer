@@ -3,6 +3,8 @@ The Box is kind of ugly but the project is still in his Beta phase but if someon
 
 ### the electronic schematic can be found [here](https://www.tinkercad.com/things/ahP5V3AsNab).
 
+### The discord where you can find me and discuss about this or all my projects can be found [here](https://discord.gg/VvGP6tTeca).
+
 ### If you want to make it you will need:
 - a 3D printer
 - a laser cutter
