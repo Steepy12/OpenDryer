@@ -1,0 +1,11 @@
+There is the list of the Open Dryer Mark Two
+Ender 5 Heated bed x 1
+Meanwell LRS 350-24 x 1
+Arduino Relay x1
+LM2596 x 1
+Arduino Nano x 1
+32x128 OLED Screen  x 1
+250k potentiometer x 2
+C14 220v connector x 1
+
+/!\ DON'T MAKE THE NEW ELECTRONIC FOR THE MOMENT, NOTHING HAS BEEN TESTED, ONLY THE NEW BOX IS READY AT THE MOMENT /!\
