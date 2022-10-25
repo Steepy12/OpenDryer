@@ -11,7 +11,7 @@ This is a big update for the project because i made a better box, better electro
 - PETG or any High melting point filament
 - all the parts listed 
 
-### The parts are listed in the .TXT file i added in the repo
+### The parts are listed in the .TXT file i added in the repo, Please read it fisrt before buying everything !
 
 ### You will need to print :
 - 1 times the Door Knob
@@ -41,6 +41,7 @@ What is planed ?
 - upgrade the esthetic
 - upgrade the lock and hinge
 - upgrade the whole case (easier to make and assemble less screws)
+- Make a Domotized version with blynk or Home Assistant
 
 
 
