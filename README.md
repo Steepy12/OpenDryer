@@ -28,6 +28,11 @@ This is a big update for the project because i made a better box, better electro
 - 1 time the back 
 - 1 time the door 
 
+What am i doing now ?
+======================
+
+I'm currently working on the timer system and a  better esthetic for the Screens
+
 What is planed ?
 =============
 ### There is a lot of things planed on this project:
